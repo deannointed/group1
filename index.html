@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FUNAABSU Gist Gig | Campus News Portal</title>
+  <link rel="stylesheet" href="style1.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="FUNAAB-Logo.png" alt="FUNAABSU Gist Gig Logo">
+      <h1>FUNAABSU Gist Gig</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">🏠 Home</a></li>
+        <li><a href="about.html">🪪 About</a></li>
+        <li><a href="academic.html">📰 News</a></li>
+        <li><a href="contact.html">☎️ Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Search Bar -->
+  <section class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for campus news...">
+    <button onclick="searchNews()">Search</button>
+  </section>
+
+  <!-- Main News Section -->
+  <main>
+    <section class="featured-news">
+      <h2>Featured Campus Stories</h2>
+      <div class="news-grid">
+
+    <article class="news-item">
+  <img src="convocation.jpg" alt="Campus Event">
+  <h3>FUNAAB Holds 36th Convocation Ceremony</h3>
+  <p>
+    Students and staff gathered to celebrate the institution’s academic excellence at the annual convocation...
+    <span class="more-text">
+      The ceremony, held at the university main auditorium, marked a significant milestone in FUNAAB’s 
+      commitment to excellence and innovation in education.  
+      A total of over 5,000 students from various colleges received their degrees, with 120 graduating 
+      with First Class Honours across different departments.  
+
+      The Vice-Chancellor, Prof. Olusola Kehinde, congratulated the graduating students and urged them 
+      to be ambassadors of integrity and diligence wherever they go.  
+      He emphasized the importance of technology, entrepreneurship, and leadership in building a better 
+      Nigeria, highlighting the university’s vision to produce globally competitive graduates.  
+
+      The ceremony was graced by several dignitaries including the Minister of Education, the Chancellor, 
+      and representatives from the Ogun State Government.  
+      The Guest Speaker, Dr. (Mrs.) Funke Adeyemi, delivered an inspiring lecture on 
+      “Education, Innovation, and the Future of Nigerian Youths,” stressing the role of young minds 
+      in national development.  
+
+      During the event, special awards were presented to outstanding students who excelled academically 
+      and in extracurricular activities.  
+      Parents, alumni, and friends of the university expressed pride and excitement as the campus buzzed 
+      with joy, music, and colorful traditional attire.  
+
+      The event concluded with a cultural display and photo session at the Freedom Park, where graduates 
+      celebrated the end of one chapter and the beginning of a new journey.  
+      Indeed, the 36th Convocation of FUNAAB will be remembered as one of unity, achievement, and inspiration 
+      for future generations of scholars.
+    </span>
+  </p>
+  <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+</article>
+
+
+        <article class="news-item">
+  <img src="throphy-sport.jpeg" alt="Sports Event">
+  <h3>Sports Week: FUNAABSU Triumphs in Inter-Departmental Games</h3>
+  <p>
+    The Students’ Union made history by winning the inter-departmental sports competition held on the main field...
+    <span class="more-text">
+      The week-long event featured various sports including football, volleyball, table tennis, and athletics. 
+      The final football match between the Faculty of Engineering and the College of Biological Sciences drew a massive crowd.  
+      FUNAABSU athletes displayed great teamwork and resilience, clinching victory in multiple events.  
+      The Sports Director, Comr. Adedeji Samuel, expressed gratitude to all participating departments and promised 
+      even greater inclusion in next year’s edition. The Vice-Chancellor, in his closing remarks, encouraged students 
+      to balance academics with healthy physical activities.
+    </span>
+  </p>
+  <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+</article>
+
+<article class="news-item">
+  <img src="funnab-gate.jpeg" alt="Tech Event">
+  <h3>ICT Department Hosts Innovation Challenge</h3>
+  <p>
+    Young innovators from the Department of Information Technology presented amazing tech projects at the event...
+    <span class="more-text">
+      The Innovation Challenge, organized by the ICT Directorate in collaboration with the Students’ Union, 
+      aimed to showcase student creativity and digital problem-solving skills. Over 20 teams presented projects 
+      ranging from campus navigation apps to smart attendance systems.  
+      The winning project, “FUNAAB Smart Portal,” developed by 300-level IT students, allows seamless access 
+      to course materials, timetables, and grades.  
+      Dr. Adekunle, the head of the ICT Department, commended students for their efforts and announced plans 
+      for mentorship opportunities and tech startup support.
+    </span>
+  </p>
+  <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+</article>
+
+
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+      <h2>News Categories</h2>
+      <div class="category-grid">
+        <div class="category-card">
+          <h3>Academics</h3>
+          <p>Updates on lectures, results, and academic achievements.</p>
+          <a href="academic.html">View Stories</a>
+        </div>
+        <div class="category-card">
+          <h3>Events</h3>
+          <p>Campus happenings, cultural days, and student activities.</p>
+          <a href="event.html">View Stories</a>
+        </div>
+        <div class="category-card">
+          <h3>Sports</h3>
+          <p>Coverage of inter-school and intra-school sports events.</p>
+          <a href="sport.html">View Stories</a>
+        </div>
+        <div class="category-card">
+          <h3>Opinion</h3>
+          <p>Student voices and discussions on trending campus topics.</p>
+          <a href="opinion.html">View Stories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Submit News -->
+    <section class="submit-news">
+      <h2>Submit Your News Article</h2>
+      <form id="submitForm">
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="News Title" required>
+        <textarea placeholder="Write your news content here..." rows="5" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 FUNAABSU Gist Gig | All Rights Reserved.</p>
+    <p>Follow us:
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+<script>
+  function toggleReadMore(button) {
+  const article = button.parentElement;
+  const moreText = article.querySelector('.more-text');
+
+  if (moreText.style.display === "inline") {
+    moreText.style.display = "none";
+    button.textContent = "Read More";
+  } else {
+    moreText.style.display = "inline";
+    button.textContent = "Read Less";
+  }
+}
+
+</script>
+</body>
+</html>
