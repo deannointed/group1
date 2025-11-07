@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opinion | FUNAABSU Gist Gig</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>FUNAABSU Gist Gig</h1>
+    <div class="news-links">
+    <a href="Index.html">🏠 Home</a>
+    <a href="academic.html">📚 Academic</a>
+    <a href="event.html" class="btn">🎉 Events</a>
+    <a href="sport.html" class="btn">⚽ Sports</a>
+    <a href="opinion.html" class="btn">💭 Opinion</a>
+  </div>
+  </header>
+
+  <main>
+    <section class="category-header">
+      <h2>Campus Opinion</h2>
+      <p>Read honest takes, thoughtful reflections, and students’ voices on the latest issues shaping life at FUNAAB.</p>
+    </section>
+
+    <!-- NELFUND Loan Opinion -->
+    <article class="news-item">
+      <img src="Nigerian_Education_Loan_Fund_(NELFUND).png" alt="NELFUND Loan">
+      <h3>Students React to NELFUND Loan Disbursement Delay</h3>
+      <p>
+        The delay in disbursement of the NELFUND student loan has sparked mixed reactions among students of FUNAAB...
+        <span class="more-text">
+          Many students expressed frustration, stating that the delay has made it difficult to pay their school fees 
+          and complete registration.  
+          A 200-level student of Information Technology lamented, “We were promised quick disbursement once approved, 
+          but weeks have passed with no update.”  
+
+          On the other hand, some students urged patience, saying that the federal process takes time 
+          and the loan will eventually be credited.  
+          Financial experts on campus advised beneficiaries to use the funds strictly for academic expenses 
+          and avoid unnecessary spending once received.  
+
+          The university management has assured students that it is in touch with NELFUND officials 
+          to ensure timely communication and transparency.
+        </span>
+      </p>
+      <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+    </article>
+
+    <!-- Hostel Life Opinion -->
+    <article class="news-item">
+      <img src="hostel.jpeg" alt="Hostel Life">
+      <h3>Life in the Hostels: Between Comfort and Chaos</h3>
+      <p>
+        Hostel life at FUNAAB is an experience every student remembers — for better or worse...
+        <span class="more-text">
+          For some, it’s a place of lasting friendship, night study sessions, and shared laughter.  
+          For others, it’s a daily struggle with water shortages, noisy roommates, and tight spaces.  
+
+          Students from different halls shared their perspectives.  
+          “I love the social life, but sometimes privacy is impossible,” said Kemi, a resident of Iyalode Tinubu Hostel(IYAT).  
+          Others called for better maintenance and stricter hall rules.  
+
+          The university management recently announced plans to improve hostel facilities 
+          and renovate some aging buildings.  
+          Still, for most students, hostel life remains a mix of memories, lessons, and survival.
+        </span>
+      </p>
+      <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+    </article>
+
+    <!-- Exam Stress -->
+    <article class="news-item">
+      <img src="exam.webp" alt="Exam Stress">
+      <h3>Exam Stress and the Need for Mental Health Awareness</h3>
+      <p>
+        As the semester draws to a close, many students find themselves battling anxiety, sleeplessness, 
+        and exam pressure...
+        <span class="more-text">
+          Mental health discussions on campus have become more common, but many students still struggle 
+          in silence.  
+          A Psychology lecturer noted that “academic pressure should never come at the cost of one’s well-being.”  
+
+          The Students’ Union Welfare Committee has launched a peer-support initiative called *Talk2Me*, 
+          where trained volunteers offer listening ears to stressed students.  
+          The university clinic also encourages students to seek help early rather than overworking themselves.  
+
+          “Rest is part of studying,” said a 300-level Biochemistry student.  
+          It’s a reminder that success means more when achieved with a healthy mind.
+        </span>
+      </p>
+      <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+    </article>
+
+    <!-- Student Leadership -->
+    <article class="news-item">
+      <img src="project.jpeg" alt="Student Leadership">
+      <h3>Student Leadership: Service or Self-Interest?</h3>
+      <p>
+        With upcoming Students’ Union elections around the corner, debates have emerged about 
+        what true leadership should mean on campus...
+        <span class="more-text">
+          Some students believe leadership should be about service, representation, and genuine 
+          concern for others.  
+          Others argue that many aspirants only seek fame, popularity, and influence.  
+
+          “Leadership on campus is a reflection of leadership in society,” said a Political Science student.  
+          “We must choose people with integrity, not just loud voices.”  
+
+          The SU President responded, saying that leadership comes with sacrifice, 
+          and that anyone vying for office must be prepared to serve selflessly.  
+          Students are encouraged to vote responsibly during the election week.
+        </span>
+      </p>
+      <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FUNAABSU Gist Gig | Designed by Group 1 (IFT Students)</p>
+  </footer>
+
+  <script>
+    function toggleReadMore(button) {
+      const moreText = button.previousElementSibling.querySelector('.more-text');
+      moreText.classList.toggle('show');
+      button.textContent = moreText.classList.contains('show') ? 'Read Less' : 'Read More';
+    }
+  </script>
+</body>
+</html>

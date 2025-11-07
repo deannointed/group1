@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | FUNAABSU Gist Gig</title>
+  <link rel="stylesheet" href="style-red.css">
+</head>
+<body>
+  <header>
+    <h1>FUNAABSU Gist Gig</h1>
+     <div class="news-links">
+    <a href="Index.html">🏠 Home</a>
+    <a href="academic.html">📚 Academic</a>
+    <a href="event.html" class="btn">🎉 Events</a>
+    <a href="sport.html" class="btn">⚽ Sports</a>
+    <a href="opinion.html" class="btn">💭 Opinion</a>
+  </div>
+  </header>
+
+  <main>
+    <section class="category-header">
+      <h2>Campus Events</h2>
+      <p>Stay updated on all campus happenings — parties, ceremonies, and special occasions across FUNAAB!</p>
+    </section>
+
+    <!-- Hall of Residence Party -->
+    <article class="news-item">
+      <img src="party.jpeg" alt="Hall Party">
+      <h3>Hall of Residence Party: A Night of Fun and Vibes</h3>
+      <p>
+        The much-anticipated Hall of Residence party held last Friday night was nothing short of electrifying...
+        <span class="more-text">
+          Organized by the Hall Executives in collaboration with the Students’ Union Social Committee, 
+          the event brought together students from all colleges to unwind after a busy academic week.  
+          The venue was beautifully decorated with colorful lights and banners, giving off a vibrant club atmosphere.  
+
+          DJ Skillz kept the crowd entertained with hit tracks while performances from campus artists like 
+          JayBlaq, Nifemi Vibes, and De-Classic had students cheering.  
+          There were dance competitions, comedy sessions, and refreshments sponsored by local vendors.  
+
+          According to the Hall Chairperson, the goal was to foster unity and relaxation among residents.  
+          The event ended peacefully at midnight under the supervision of the FUNAABSU security team.  
+          “It was the best night of the semester,” said one excited student from Iyalode Hall.
+        </span>
+      </p>
+      <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+    </article>
+
+    <!-- Freshers’ Orientation -->
+    <article class="news-item">
+      <img src="freasher.jpeg" alt="Orientation">
+      <h3>FUNAAB Welcomes New Students at 2025 Freshers’ Orientation</h3>
+      <p>
+        The university management officially welcomed newly admitted students at the annual Freshers’ Orientation Program...
+        <span class="more-text">
+          The event took place at the Oduduwa Lecture Theatre with all departments represented.  
+          The Vice-Chancellor, represented by the Dean of Student Affairs, encouraged the new students to focus on 
+          academics and discipline, promising that the university will provide a conducive environment for learning.  
+
+          The Students’ Union executives were also present to advise freshers on adjusting to campus life.  
+          Various university units such as Health Services, Library, and Security gave presentations 
+          to familiarize students with available facilities.  
+
+          The event concluded with an entertainment segment featuring poetry, music, and a mini quiz competition.
+        </span>
+      </p>
+      <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+    </article>
+
+    <!-- Cultural Day Celebration -->
+    <article class="news-item">
+      <img src="cultural.jpeg" alt="Cultural Day">
+      <h3>Students Shine at Annual Cultural Day Celebration</h3>
+      <p>
+        FUNAAB’s campus came alive with color, music, and tradition during the 2025 Cultural Day celebration...
+        <span class="more-text">
+          Students proudly showcased their heritage by dressing in traditional attires representing 
+          Nigeria’s diverse ethnic groups.  
+          Each faculty presented cultural displays — including Yoruba bata dance, Hausa drumming, Igbo masquerade, 
+          and Tiv folk songs.  
+
+          The Vice-Chancellor commended the Student Affairs Division for promoting unity in diversity, 
+          stating that culture is a vital tool for peace and understanding among students.  
+
+          The highlight of the day was the Cultural Parade, where College of Animal Science 
+          and Livestock Production emerged as the “Most Culturally Represented College.”  
+          It was a celebration of pride, identity, and togetherness.
+        </span>
+      </p>
+      <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+    </article>
+
+    <!-- Students’ Leadership Summit -->
+    <article class="news-item">
+      <img src="ledership.jpeg" alt="Leadership Summit">
+      <h3>Students’ Leadership Summit Inspires Change and Innovation</h3>
+      <p>
+        The Students’ Leadership Summit 2025 gathered over 300 student leaders from different colleges 
+        to discuss leadership, governance, and campus development...
+        <span class="more-text">
+          The summit, themed “Empowering the Next Generation of Change-Makers”, featured keynote sessions 
+          from guest speakers including alumni and industry professionals.  
+
+          Panel discussions covered topics such as “Effective Student Leadership,” “Entrepreneurship in a Digital Age,” 
+          and “The Role of Youths in Nation Building.”  
+
+          According to the SU President, the summit aims to build responsible leaders who will contribute 
+          to the growth of FUNAAB and Nigeria at large.  
+          Participants described the experience as enlightening and transformative.
+        </span>
+      </p>
+      <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 FUNAABSU Gist Gig | Designed by Group 1 (IFT Students)</p>
+  </footer>
+
+  <script>
+    function toggleReadMore(button) {
+      const moreText = button.previousElementSibling.querySelector('.more-text');
+      moreText.classList.toggle('show');
+      button.textContent = moreText.classList.contains('show') ? 'Read Less' : 'Read More';
+    }
+  </script>
+</body>
+</html>
